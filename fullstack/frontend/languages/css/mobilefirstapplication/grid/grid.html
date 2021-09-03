@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+<style>
+
+.container{
+    display: grid;
+
+    /* grid-template-rows: 200px 200px; */
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-gap: 20px;
+
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+    grid-auto-rows: 200px;
+}
+    .box{
+       
+        background-color: brown;
+       
+        color: white;
+        font-size: 30px;
+    }
+    #box-2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #box-5{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+    #box-12{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+</style>
+
+
+
+        <div class="container">
+
+            <div class="box" id="box-1">im box 1</div>
+            <div class="box" id="box-2">im box 2</div>
+            <div class="box" id="box-3">im box 3</div>
+            <div class="box" id="box-4">im box 4</div>
+            <div class="box" id="box-5">im box 5</div>
+            <div class="box" id="box-6">im box 6</div>
+            
+            <div class="box" id="box-7">im box 7</div>
+            <div class="box" id="box-8">im box 8</div>
+            <div class="box" id="box-9">im box 9</div>
+            <div class="box" id="box-10">im box 10</div>
+            <div class="box" id="box-11">im box 11</div>
+            <div class="box" id="box-12">im box 12</div>
+        </div>
+        
+    </body>
+</html>

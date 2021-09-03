@@ -1,0 +1,32 @@
+.container {
+  background-color: blue;
+  height: 200px;
+}
+
+.container .child {
+  background-color: brown;
+  height: 100px;
+}
+
+.container .child .kl:hover {
+  background-color: coral;
+}
+
+.j {
+  font-size: 40px;
+  background-color: #c8ff00;
+  padding: 23px;
+}
+
+.k {
+  font-size: 40px;
+  background-color: #c8ff00;
+  padding: 10px;
+}
+
+.l {
+  font-size: 40px;
+  background-color: #c8ff00;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
