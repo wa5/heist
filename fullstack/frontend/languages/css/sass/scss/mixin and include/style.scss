@@ -1,0 +1,21 @@
+@import "colors";
+@import "test";
+
+@mixin radhika($srinu,$josoph,$charn,$triner){
+    background-color: $srinu;
+    font-size: $josoph;
+    color: $charn;
+    border: $triner solid black;
+}
+
+
+
+.p1{
+  @include radhika($color1,$fz1,white,2px)
+}
+.p2{
+    @include radhika($color,$fz2,white,2px)
+}
+.p3{
+    @include radhika(rgb(47, 0, 255),$fz3,white,2px)
+}

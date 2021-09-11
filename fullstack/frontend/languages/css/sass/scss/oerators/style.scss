@@ -1,0 +1,55 @@
+
+$haha:rgb(200, 255, 0);
+$size: 10px;
+
+
+
+.container{
+    background-color: blue;
+  height: 200px;
+
+
+  .child{
+    background-color: brown;
+    height: 100px;
+
+
+    .kl:hover{
+        background-color: coral;
+    }
+
+
+      }
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+.j{
+    font-size: 50px-10px;
+    background-color: $haha;
+
+    padding:$size+13px;
+}
+.k{
+    font-size: 50px-10px;
+    background-color: $haha;
+
+    padding: 10px;
+}
+.l{
+    font-size: 50px-10px;
+    background-color: $haha;
+
+    padding: 10px;
+}
