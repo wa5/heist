@@ -1,0 +1,31 @@
+<script>
+
+var email="ggg@gmail.com"
+
+
+
+class User{
+
+    constructor(email,name){
+       this.email=email
+       this.name=name
+    }
+login(){
+    console.log(this.email,"just loged in")
+   
+}
+logout(){
+    console.log(this.email,"just loged out")
+    return this
+}
+
+}
+
+
+var user1=new User("charan@gmail.com","charan")
+
+user1.login().logout()
+
+</script>
+
+a
