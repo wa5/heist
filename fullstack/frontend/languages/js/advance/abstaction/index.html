@@ -1,0 +1,22 @@
+<script>
+
+
+
+    function Employ2(name,age,salary){
+    
+        this.name=name
+        this.age=age
+        this.salary=salary
+        let bonus=1000
+    
+        this.calculatesalary= ()=>{
+            let fs=this.salary+bonus
+            console.log(fs+"bonus u got: "+bonus)
+        }
+    }
+    
+    var emp1=new Employ2("srinu",35,70000)
+    emp1.calculatesalary()
+    
+    console.log(emp1.bonus)
+    </script>

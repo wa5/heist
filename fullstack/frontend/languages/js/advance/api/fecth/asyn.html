@@ -1,0 +1,10 @@
+<script>
+ async function fun(){
+    const data= await fetch('https://api.github.com/users')
+    const data2= data.text()
+    return data2
+}
+fun()
+
+
+</script>

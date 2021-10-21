@@ -1,0 +1,15 @@
+{
+  "name": "zeroconfig",
+  "version": "1.0.0",
+  "description": "this my education",
+  "main": "index.js",
+  "scripts": {
+    "latepravalika": "webpack"
+  },
+  "author": "samreen",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
