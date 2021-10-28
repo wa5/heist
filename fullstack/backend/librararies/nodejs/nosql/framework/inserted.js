@@ -8,23 +8,20 @@ monGc.connect(url,(err,db)=>{
     console.log('db connected')
 
 var dbo=db.db('bhvya')
-dbo.createCollection('students',(err,res)=>{
-    if(err)throw err
-    console.log('table created')
+
 
 var mydata={
-    name:'bhavya',
-    class:'mern class',
-    brakfast:'dasa '
+    name:'xyz',
+    class:'mern classs',
+    brakfast:'puri ',
+    id:1
 }
 
 
 dbo.collection('students').insertOne(mydata,(err,res)=>{
     if(err)throw err
     console.log('inserted')
-})
     db.close()
 })
-
-
+    
 })
