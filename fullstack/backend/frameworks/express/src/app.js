@@ -1,6 +1,20 @@
 var express = require('express')
 var app = express()
 require('../config/db.config')
+//frontebd seetings
+var path=require('path')
+var ejs=require('ejs')
+app.set('view engine','ejs')
+app.set('views',path.join(__dirname,'views'))
+
+//apis
+
+var address=require('./routes/index')
+
+
+
+
+
 
 //db connection
 var {Users}=require('../src/models/index')
@@ -17,50 +31,17 @@ console.log('data from midle ware')
 
 
 
-app.get('/home/:name/:movies',capture, (req, res) => {
-    var name = req.params
-    console.log(name)
-    var data = name.name
-    res.send(data)
-})
-app.post('/home', (req, res) => {
-    res.send('hi hello post')
-})
-app.delete('/home', (req, res) => {
-    res.send('hi hello delete')
-})
-app.put('/home', (req, res) => {
-    res.send('hi hello put')
-})
+//apis calling
 
-app.route('/bhavya')
-.get( (req, res) => {
-    res.send('hello')
-})
-.post((req, res) => {
-    res.send('hello')
-})
-.put( (req, res) => {
-    res.send('hello')
-})
-.delete( (req, res) => {
-    res.send('hello')
-})
+app.use('/api',address.login)
+app.use('/api',address.register)
+app.use('/api',address.home)
 
 
-app.route('/dance')
-.get( (req, res) => {
-    res.send('hello')
-})
-.post((req, res) => {
-    res.send('hello')
-})
-.put( (req, res) => {
-    res.send('hello')
-})
-.delete( (req, res) => {
-    res.send('hello')
-})
+
+
+
+
 
 
 app.listen('8000', () => {
