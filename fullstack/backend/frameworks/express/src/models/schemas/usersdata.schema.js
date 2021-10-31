@@ -9,7 +9,9 @@ const {Schema}=mongoose
 var structureUsersData=new Schema(
     {
 name:String,
-movies:String,
+phonno:Number,
+email:String,
+password:String
 
 
     })

@@ -2,9 +2,9 @@ var express=require('express')
 var router=express.Router()
 
 
-router.route('/login')
+router.route('/register')
 .get((req,res)=>{
-    res.render('login')
+    res.render('register')
 })
 .post((req,res)=>{
     res.render('login')

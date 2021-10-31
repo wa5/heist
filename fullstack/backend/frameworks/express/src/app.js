@@ -7,6 +7,11 @@ var ejs=require('ejs')
 app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'views'))
 
+//static files
+var pub=path.join(__dirname,'public')
+app.use(express.static(pub))
+
+
 //apis
 
 var address=require('./routes/index')
